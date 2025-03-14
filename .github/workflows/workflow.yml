@@ -1,6 +1,5 @@
 name: Publish REST ML Service to GHCR
 on:
-  workflow_dispatch:
   pull_request:
     types: [closed]
 
