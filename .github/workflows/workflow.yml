@@ -1,5 +1,6 @@
 name: Publish REST ML Service to GHCR
 on:
+  workflow_dispatch:
   pull_request:
     types: [closed]
 
@@ -21,4 +22,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/RoblesAdrian/log_predict:latest
+          tags: ghcr.io/roblesadrian/log_predict:latest
